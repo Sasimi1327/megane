@@ -2110,6 +2110,21 @@ body {
         width: 2.5%; }
     .inTouch .inTouch-main .form textarea {
       width: 100%; }
+      .inTouch .inTouch-main .form textarea ::-webkit-input-placeholder {
+        opacity: 1;
+        color: #707070; }
+      .inTouch .inTouch-main .form textarea ::-moz-placeholder {
+        opacity: 1;
+        color: #707070; }
+      .inTouch .inTouch-main .form textarea :-ms-input-placeholder {
+        opacity: 1;
+        color: #707070; }
+      .inTouch .inTouch-main .form textarea ::-ms-input-placeholder {
+        opacity: 1;
+        color: #707070; }
+      .inTouch .inTouch-main .form textarea ::placeholder {
+        opacity: 1;
+        color: #707070; }
     .inTouch .inTouch-main .form a {
       display: inline-block;
       position: relative;
