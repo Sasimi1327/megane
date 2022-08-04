@@ -1,0 +1,51 @@
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+
+    > * {
+      @include make-col-ready();
+    }
+  }
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+// xs
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: percentage(divide($i, $grid-columns));
+    padding-right: (.5 * $grid-gutter-width);
+    padding-left: (.5 * $grid-gutter-width);
+  }
+}
+
+// sm, md, lg, xl, xxl
+@each $size, $size-value in $grid-breakpoints {
+  @media screen and (max-width: $size-value) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$size}-#{$i} {
+        flex: 0 0 auto;
+        width: percentage(divide($i, $grid-columns));
+        padding-right: (.5 * $grid-gutter-width);
+        padding-left: (.5 * $grid-gutter-width);
+      }
+    }
+  }
+}
+
+.container{
+  max-width: $container-pc-max-width;
+  margin: 0 auto;
+  padding-left: $container-padding-width;
+  padding-right: $container-padding-width;
+  @include pad{
+      max-width: map-get($container-max-widths , 'lg' );
+  }
+  @include mobile{
+      max-width: map-get($container-max-widths , 'md' );
+  }
+}

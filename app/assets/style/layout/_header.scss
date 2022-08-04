@@ -1,0 +1,33 @@
+
+.header {
+  .logo {
+    width: 80px;
+    height: 72px;
+    object-fit: contain;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .navLink {
+    color: #fff;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .navList {
+      width: 100%;
+      text-align: center;
+      .navItem {
+        width: 50%;
+        outline: 1px solid #fff;
+      }
+    }
+    
+  }
+}

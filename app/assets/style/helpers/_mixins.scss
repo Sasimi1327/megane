@@ -1,0 +1,76 @@
+//簡易格線系統
+
+@mixin make-row($gutter: $grid-gutter-width) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-.5 * $grid-gutter-width);
+  margin-left: calc(-.5 *$grid-gutter-width);
+}
+
+@mixin make-col-ready() {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc($grid-gutter-width * .5);
+  padding-left: calc($grid-gutter-width * .5);
+}
+
+// @if $enable-grid-classes {
+//   .row {
+//     @include make-row();
+
+//     > * {
+//       @include make-col-ready();
+//     }
+//   }
+// }
+
+// ----------------------------
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: percentage(divide($size, $columns));
+
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+}
+// // xs
+// @for $i from 1 through $grid-columns {
+//   .col-#{$i} {
+//     flex: 0 0 auto;
+//     width: percentage(divide($i, $grid-columns));
+//     padding-right: (.5 * $grid-gutter-width);
+//     padding-left: (.5 * $grid-gutter-width);
+//   }
+// }
+
+// // sm, md, lg, xl, xxl
+// @each $size, $size-value in $grid-breakpoints {
+//   @media screen and (max-width: $size-value) {
+//     @for $i from 1 through $grid-columns {
+//       .col-#{$size}-#{$i} {
+//         flex: 0 0 auto;
+//         width: percentage(divide($i, $grid-columns));
+//         padding-right: (.5 * $grid-gutter-width);
+//         padding-left: (.5 * $grid-gutter-width);
+//       }
+//     }
+//   }
+// }
+
+@mixin pad {
+    @media(max-width: map-get($grid-breakpoints, "lg")){
+        @content
+    }
+};
+@mixin mobile {
+    @media(max-width: map-get($grid-breakpoints, "md")){
+        @content
+    }
+};

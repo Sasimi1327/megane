@@ -1,0 +1,168 @@
+.banner {
+  height: calc( 100vh - 80px);
+  background-image: url('../images/home-header.png');
+  // background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include pad {
+    background-image: url('../images/home-header-sm.png');
+  }
+  @include mobile {
+    height: calc( 100vh - 236px);
+  }
+  .banner-body{
+    height: 100%;
+    @include mobile {
+      h1 {
+        font-size: 24px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.advantage {
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+}
+.megane-classic{
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .classic-item {
+    @include pad {
+      margin-bottom: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.megane-design {
+  height: auto;
+  background-image: url('../images/index-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include pad {
+    background-image: url('../images/index-bg-md.png');
+  }
+  @include mobile {
+    background-image: url('../images/index-bg-sm.png');
+  }
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .design-item {
+    &:first-child {
+      margin-right: -12px;
+    }
+    &:last-child {
+      margin-left: -12px;
+    }
+    @include pad {
+      &:first-child {
+        margin-right: 0px;
+        margin-bottom: 24px;
+      }
+      &:last-child {
+        margin-left: 0px;
+      }
+    }
+    
+    .design-img1 {
+      background-image: url('../images/home-section4-1.png');
+      padding-top: 37.037%;
+      background-size: cover;
+      @include mobile {
+        padding-top: 68.965%;
+        background-image: url('../images/home-section4-1-sm.png');
+      }
+    }
+    .design-img2 {
+      background-image: url('../images/home-section4-2.png');
+      padding-top: 37.037%;
+      background-size: cover;
+      @include mobile {
+        padding-top: 68.965%;
+        background-image: url('../images/home-section4-2-sm.png');
+      }
+    }
+  }
+}
+
+.recommend {
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  //要撐出高度，否則卡片會因內容不同擠壓變形不同高低
+  .card-body {
+    height: 205px;
+  }
+  .flexible {
+    flex-grow: 1;
+  }
+}
+
+
+.inTouch {
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .inTouch-main {
+    margin: 0 auto;
+    h3 {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    .form {
+      position: relative;
+      input {
+        width: 100%;
+        &[type="checkbox"] {
+          width: 2.5%;
+        }
+      }
+      textarea {
+        width: 100%;
+      }
+      a {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+          background: #fff;
+          color: #AA0601;
+          border: 1px solid #AA0601;
+          border-radius: 5px;
+        }
+        @include pad {
+          padding-left: 136px;
+          padding-right: 136px;
+        }
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
+}
+

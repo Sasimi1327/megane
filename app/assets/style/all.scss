@@ -1,23 +1,15 @@
-$color: #00cc99;
+@import './base/reset';
+@import './base/base';
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import './helpers/variables';
+@import './helpers/functions';
+@import './helpers/mixins';
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import './base/typography';
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import './components/flex';
+@import './components/utilities';
+@import './layout/grid';
+@import './layout/header';
+@import './layout/footer';
+@import './pages/index';

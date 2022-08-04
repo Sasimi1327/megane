@@ -1,0 +1,51 @@
+// 變數
+
+$container-pc-max-width: 1320px;
+$grid-gutter-width: 1.5rem ;
+$container-padding-width: (.5 * $grid-gutter-width);
+$grid-columns: 12 !default;
+$enable-grid-classes: true !default;
+
+
+$colors: (
+  "primary":    #AA0601,
+  "secondary":  #FBF2F2,
+  "accent":     #650300,
+  "icons":      #212529,
+  "light":      #fff,
+  "dark":       #000,
+  "muted":      #707070
+);
+
+$grid-breakpoints: (
+  // xs: 0,
+  // sm: 576px,
+  lg: 992px,
+  md: 767px,
+  // xl: 1200px,
+  // xxl: 1400px
+) !default;
+$container-max-widths: (
+  // sm: 540px,
+  lg: 960px,
+  md: 720px,
+  // xl: 1140px,
+  xxl: 1320px
+) !default;
+
+$direction: (
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left
+);
+
+$line-height: (
+  "default": 24px
+);
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+) !default;

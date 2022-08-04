@@ -1,0 +1,61 @@
+// 字型字體相關
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+//字體大小
+@for $size from 1 through 25{
+  .fz-#{$size}{
+      font-size: ($size * 0.25) + rem;
+  }
+}
+
+//字體顏色
+@each $colors,  $color-value in $colors{
+  .color-#{$colors}{
+      color: $color-value;
+  }
+}
+
+//背景
+@each $colors,  $color-value in $colors{
+  .bg-#{$colors}{
+      background: $color-value;
+  }
+}
+
+
+.font-noto {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+.style-italic {
+  font-style: italic;
+}
+.style-normal {
+  font-style: normal;
+}
+
+.border-none {
+  border: 0;
+}
