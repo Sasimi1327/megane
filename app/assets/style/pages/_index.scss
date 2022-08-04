@@ -142,6 +142,10 @@
       }
       textarea {
         width: 100%;
+        ::placeholder {
+          opacity: 1;
+          color: #707070;
+        }
       }
       a {
         display: inline-block;
