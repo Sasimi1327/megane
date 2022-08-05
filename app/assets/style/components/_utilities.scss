@@ -31,7 +31,7 @@
 @each $size, $size-value in $grid-breakpoints {
   @media screen and (max-width: $size-value) {
     @each $dir, $dir-value in $direction {
-      @for $min-distance from 0 through 8 {
+      @for $min-distance from 0 through 12 {
         .m#{$dir}-#{$size}-#{$min-distance} {
             margin-#{$dir-value}: #{$min-distance * 0.5}rem;
         }
@@ -136,6 +136,9 @@
 }
 .text-left{
   text-align: left;
+}
+.vertical-center {
+vertical-align: middle;
 }
 
 .p-relative{
