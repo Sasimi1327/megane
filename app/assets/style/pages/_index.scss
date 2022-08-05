@@ -21,6 +21,11 @@
         font-size: 16px;
       }
     }
+    .banner-btn:hover {
+      cursor: pointer;
+      background-color: map-get($colors, 'light');
+      color: map-get($colors, 'primary');
+    }
   }
 }
 .advantage {
@@ -144,7 +149,7 @@
         width: 100%;
         ::placeholder {
           opacity: 1;
-          color: #707070;
+          color: map-get($colors, 'muted');
         }
       }
       a {
@@ -153,9 +158,9 @@
         left: 50%;
         transform: translateX(-50%);
         &:hover {
-          background: #fff;
-          color: #AA0601;
-          border: 1px solid #AA0601;
+          background: map-get($colors, 'light');
+          color: map-get($colors, 'primary');
+          border: 2px solid #AA0601;
           border-radius: 5px;
         }
         @include pad {
