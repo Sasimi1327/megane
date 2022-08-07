@@ -2403,4 +2403,10 @@ body {
     .officeDetail .contactList .contactItem a {
       display: inline-block; }
 
+.faq h1 {
+  border-left: 8px solid #9F1213; }
+  @media (max-width: 767px) {
+    .faq h1 {
+      font-size: 24px; } }
+
 /*# sourceMappingURL=all.css.map */
