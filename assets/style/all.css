@@ -2308,40 +2308,71 @@ body {
   .office h2 {
     font-size: 16px; } }
 
-.office {
+.office .drop {
+  position: relative;
+  display: block;
+  width: 100%; }
+  .office .drop .dropOption {
+    position: relative;
+    color: #495057;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    cursor: pointer; }
+    @media (max-width: 767px) {
+      .office .drop .dropOption {
+        padding: 6px;
+        font-size: 16px; } }
+    .office .drop .dropOption::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 12px;
+      border-width: 8px 6px;
+      border-style: solid;
+      border-color: #000 transparent transparent transparent; }
+      @media (max-width: 767px) {
+        .office .drop .dropOption::after {
+          top: 15px; } }
+    .office .drop .dropOption:hover {
+      border: 1px solid #AA0601; }
+
+.officeDetail {
   display: block; }
-  .office a:hover {
+  .officeDetail a:hover {
     -webkit-transform: scale(1.03);
         -ms-transform: scale(1.03);
             transform: scale(1.03); }
-  .office h1 {
+  .officeDetail h1 {
     border-left: 8px solid #9F1213; }
     @media (max-width: 767px) {
-      .office h1 {
+      .officeDetail h1 {
         font-size: 24px; } }
-  .office .storepage {
+  .officeDetail .storepage {
     background-image: url("../images/storepage-1.png");
     padding-top: 42.59%;
     background-size: cover; }
     @media (max-width: 992px) {
-      .office .storepage {
+      .officeDetail .storepage {
         padding-top: 53.85%;
         background-image: url("../images/store-1.png"); } }
-  .office .snapshot {
+  .officeDetail .snapshot {
     background-image: url("../images/螢幕快照_2020-02-13_16.35.44@2x.png");
     padding-top: 55.5%;
     background-size: cover; }
     @media (max-width: 992px) {
-      .office .snapshot {
+      .officeDetail .snapshot {
         background-image: url("../images/螢幕快照_2020-02-13_16.35.44.png"); } }
   @media (max-width: 767px) {
-    .office h2 {
+    .officeDetail h2 {
       font-size: 16px; } }
-  .office .drop {
+  .officeDetail .drop {
     position: relative;
     display: block;
     width: 100%; }
-    .office .drop .dropOption {
+    .officeDetail .drop .dropOption {
       position: relative;
       color: #495057;
       font-size: 18px;
@@ -2351,10 +2382,10 @@ body {
       border-radius: 5px;
       cursor: pointer; }
       @media (max-width: 767px) {
-        .office .drop .dropOption {
+        .officeDetail .drop .dropOption {
           padding: 6px;
           font-size: 16px; } }
-      .office .drop .dropOption::after {
+      .officeDetail .drop .dropOption::after {
         content: "";
         position: absolute;
         top: 20px;
@@ -2363,13 +2394,13 @@ body {
         border-style: solid;
         border-color: #000 transparent transparent transparent; }
         @media (max-width: 767px) {
-          .office .drop .dropOption::after {
+          .officeDetail .drop .dropOption::after {
             top: 15px; } }
-      .office .drop .dropOption:hover {
+      .officeDetail .drop .dropOption:hover {
         border: 1px solid #AA0601; }
-  .office .contactList {
+  .officeDetail .contactList {
     height: auto; }
-    .office .contactList .contactItem a {
+    .officeDetail .contactList .contactItem a {
       display: inline-block; }
 
 /*# sourceMappingURL=all.css.map */
