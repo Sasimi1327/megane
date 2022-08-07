@@ -1,0 +1,78 @@
+
+.office {
+  a:hover {
+    transform: scale(1.03);
+  }
+  h1 {
+    border-left: 8px solid #9F1213;
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  display: block;
+  .storepage {
+    background-image: url('../images/storepage-1.png');
+    padding-top: 42.59%;
+    background-size: cover;
+    @include pad {
+      padding-top: 53.85%;
+      background-image: url('../images/store-1.png');
+    }
+  }
+  .snapshot {
+    background-image: url('../images/螢幕快照_2020-02-13_16.35.44@2x.png');
+    padding-top: 55.5%;
+    background-size: cover;
+    @include pad {
+      background-image: url('../images/螢幕快照_2020-02-13_16.35.44.png');
+    }
+  }
+
+  @include mobile {
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .drop {
+    position: relative;
+    display: block;
+    width: 100%;
+    .dropOption {
+      position: relative;
+      color: #495057;
+      font-size: 18px;
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #CED4DA;
+      border-radius: 5px;
+      cursor: pointer;
+      @include mobile {
+        padding: 6px;
+        font-size: 16px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        border-width: 8px 6px;
+        border-style: solid;
+        border-color: #000 transparent transparent transparent;
+        @include mobile {
+          top: 15px;
+        }
+      }
+      &:hover {
+        border: 1px solid #AA0601;
+      }
+    }
+  }
+  .contactList {
+    height: auto;
+    .contactItem a {
+      display: inline-block;
+    }
+  }
+}
