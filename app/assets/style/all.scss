@@ -1,15 +1,16 @@
-@import './base/reset';
-@import './base/base';
-
 @import './helpers/variables';
+@import './base/reset';
+
 @import './helpers/functions';
 @import './helpers/mixins';
 
+@import './base/base';
 @import './base/typography';
 
 @import './components/flex';
 @import './components/utilities';
 @import './layout/grid';
+
 @import './layout/header';
 @import './layout/footer';
 @import './pages/index';
