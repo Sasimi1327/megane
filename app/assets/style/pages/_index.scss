@@ -9,7 +9,9 @@
     background-image: url('../images/home-header-sm.png');
   }
   @include mobile {
-    height: calc( 100vh - 236px);
+    // 手機版時 .banner 不用滿版，可以再調整高度
+    // height: calc( 100vh - 236px);
+    height: 400px;
   }
   .banner-body{
     height: 100%;
@@ -141,15 +143,31 @@
       position: relative;
       input {
         width: 100%;
+        // 表單的 input 背景色是透明色，不是白色。
+        background-color: transparent;
+        border: 1px solid  map-get($colors, 'dark');
         &[type="checkbox"] {
           width: 2.5%;
+        }
+        // focus 時也建議改為設計稿提供的色系
+        &:focus {
+          border: 2px solid map-get($colors, 'primary');;
+          outline: none;
         }
       }
       textarea {
         width: 100%;
+        // 表單的 input 背景色是透明色，不是白色。
+        background-color: transparent;
+        border: 1px solid  map-get($colors, 'dark');
         ::placeholder {
           opacity: 1;
           color: map-get($colors, 'muted');
+        }
+         // focus 時也建議改為設計稿提供的色系
+        &:focus {
+          border: 2px solid map-get($colors, 'primary');;
+          outline: none;
         }
       }
       a {
@@ -157,10 +175,13 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        // 在 hover 前先加上透明 border(先佔1px的位置先，之後才不會因多出border 1px跳動)
+        // ，這樣才不會在 hover 時有跳動感
+        border: 1px solid transparent;
         &:hover {
           background: map-get($colors, 'light');
           color: map-get($colors, 'primary');
-          border: 2px solid #AA0601;
+          border: 1px solid map-get($colors, 'primary');;
           border-radius: 5px;
         }
         @include pad {
@@ -169,6 +190,8 @@
         }
         @include mobile {
           display: block;
+          // 加上 padding-inline: 0;，padding 由 136 降為 0px
+          padding-inline: 0;
         }
       }
     }

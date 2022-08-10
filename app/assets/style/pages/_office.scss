@@ -43,8 +43,12 @@
           top: 15px;
         }
       }
+      &:focus-visible {
+        border: 2px dashed #AA0601;
+        outline: none;
+      }
       &:hover {
-        border: 1px solid #AA0601;
+        border: 2px solid #AA0601;
       }
     }
   }
