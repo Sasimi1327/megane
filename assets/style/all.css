@@ -2158,7 +2158,7 @@ body {
       background-image: url("../images/home-header-sm.png"); } }
   @media (max-width: 767px) {
     .banner {
-      height: calc( 100vh - 236px); } }
+      height: 400px; } }
   .banner .banner-body {
     height: 100%; }
     @media (max-width: 767px) {
@@ -2253,11 +2253,18 @@ body {
   .inTouch .inTouch-main .form {
     position: relative; }
     .inTouch .inTouch-main .form input {
-      width: 100%; }
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #000; }
       .inTouch .inTouch-main .form input[type="checkbox"] {
         width: 2.5%; }
+      .inTouch .inTouch-main .form input:focus {
+        border: 2px solid #AA0601;
+        outline: none; }
     .inTouch .inTouch-main .form textarea {
-      width: 100%; }
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #000; }
       .inTouch .inTouch-main .form textarea ::-webkit-input-placeholder {
         opacity: 1;
         color: #707070; }
@@ -2273,17 +2280,21 @@ body {
       .inTouch .inTouch-main .form textarea ::placeholder {
         opacity: 1;
         color: #707070; }
+      .inTouch .inTouch-main .form textarea:focus {
+        border: 2px solid #AA0601;
+        outline: none; }
     .inTouch .inTouch-main .form a {
       display: inline-block;
       position: relative;
       left: 50%;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%);
+      border: 1px solid transparent; }
       .inTouch .inTouch-main .form a:hover {
         background: #fff;
         color: #AA0601;
-        border: 2px solid #AA0601;
+        border: 1px solid #AA0601;
         border-radius: 5px; }
       @media (max-width: 992px) {
         .inTouch .inTouch-main .form a {
@@ -2291,7 +2302,8 @@ body {
           padding-right: 136px; } }
       @media (max-width: 767px) {
         .inTouch .inTouch-main .form a {
-          display: block; } }
+          display: block;
+          padding-inline: 0; } }
 
 .office a:hover {
   -webkit-transform: scale(1.03);
@@ -2336,8 +2348,11 @@ body {
       @media (max-width: 767px) {
         .office .drop .dropOption::after {
           top: 15px; } }
+    .office .drop .dropOption:focus-visible {
+      border: 2px dashed #AA0601;
+      outline: none; }
     .office .drop .dropOption:hover {
-      border: 1px solid #AA0601; }
+      border: 2px solid #AA0601; }
 
 .officeDetail {
   display: block; }

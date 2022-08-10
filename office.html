@@ -28,16 +28,21 @@
   
 <div class="container office pt-12 pt-lg-10 pt-md-5 pb-10 pb-md-8">
   <h1 class="fz-12 font-bold pl-2 mb-4 mb-md-3">門市據點</h1>
-
-
-  <h2 class="fz-6 text-center py-1 d-inline-block mr-2">選擇地區</h2>
-  <div class="col-4 col-md-10 d-inline-block">
+  
+  <label class="fz-6 text-center py-1 d-inline-block mr-2" for="city">選擇地區</label>
+  <div class="col-4 col-md-8 d-inline-block">
     <div class="drop">
-      <div class="dropOption">
+      <!-- <div class="dropOption">
         <span>台北市</span>
-      </div>
+      </div> -->
+      <select class="dropOption col-12" id="city">
+        <option value="taipei">台北市</option>
+        <option value="taichung">台中市</option>
+        <option value="kaohsiung">高雄市</option>
+      </select>
     </div>
   </div>
+
 
   <div class="row mt-5">
 
