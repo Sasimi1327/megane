@@ -3,23 +3,13 @@
   @include pad {
     padding-top: 44px;
   }
-  @include mobile {
-    padding-top: 24px;
-    margin-bottom: 16px;
-  }
   a {
     &:hover {
       transform: scale(1.10);
     }
   }
   .footer-main {
-    @include mobile {
-      padding-bottom: 24px;
-    }
     .navList {
-      @include pad {
-        margin-bottom: 32px;
-      }
       @include mobile {
         display: none;
       }
@@ -27,24 +17,16 @@
   }
   
   .contact {
-    @include mobile {
-      font-size: 16px;
-      li:first-child {
-        margin-bottom: 8px;
-      }
-    }
     a {
       color: #fff;
       &:hover {
         transform: scale(1.05);
       }
       span {
-        font-size: 48px;
         text-align: center;
         vertical-align: middle;
         @include mobile {
           margin-right: 10px;
-          font-size: 48px;
         }
       }
     }
@@ -65,7 +47,6 @@
 .footer-copyright {
   @include mobile {
     flex-direction: column;
-    padding-bottom: 24px;
   }
   .copyright-policy {
     @include mobile {
@@ -74,10 +55,6 @@
     }
     li {
       font-size: 14px;
-      @include mobile {
-        padding-top: 8px;
-        margin-left: 0;
-      }
     }
   }
 }

@@ -5,11 +5,7 @@
   }
   h1 {
     border-left: 8px solid #9F1213;
-    @include mobile {
-      font-size: 24px;
-    }
   }
-
   display: block;
   .storepage {
     // height: 100%;
@@ -27,12 +23,6 @@
     background-size: cover;
     @include pad {
       background-image: url('../images/螢幕快照_2020-02-13_16.35.44.png');
-    }
-  }
-
-  @include mobile {
-    h2 {
-      font-size: 16px;
     }
   }
 
@@ -65,8 +55,12 @@
           top: 15px;
         }
       }
+      &:focus-visible {
+        border: 2px dashed #AA0601;
+        outline: none;
+      }
       &:hover {
-        border: 1px solid #AA0601;
+        border: 2px solid #AA0601;
       }
     }
   }

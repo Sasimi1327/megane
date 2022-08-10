@@ -2,8 +2,5 @@
 .faq {
   h1 {
     border-left: 8px solid #9F1213;
-    @include mobile {
-      font-size: 24px;
-    }
   }
 }

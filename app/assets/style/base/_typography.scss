@@ -8,6 +8,15 @@
       font-size: ($size * 0.25) + rem;
   }
 }
+@each $size, $size-value in $grid-breakpoints {
+  @media screen and (max-width: $size-value) {
+    @for $i from 1 through 25{
+      .fz-#{$size}-#{$i}{
+        font-size: ($i * 0.25) + rem;
+      }
+    }
+  }
+}
 
 //字體顏色
 @each $colors,  $color-value in $colors{

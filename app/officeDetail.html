@@ -6,14 +6,22 @@ current: officeDetail
 ---
 
 <div class="container officeDetail pt-12 pt-lg-10 pt-md-5 pb-10 pb-md-8">
-  <h1 class="fz-12 font-bold pl-2 mb-4 mb-md-3">門市據點</h1>
+  <h1 class="fz-12 fz-md-6 font-bold pl-2 mb-4 mb-md-3">門市據點</h1>
 
-  <h2 class="fz-6 text-center py-1 d-inline-block mr-2">選擇分店</h2>
-  <div class="col-4 col-md-10 d-inline-block">
+  <!-- <h2 class="fz-6 text-center py-1 d-inline-block mr-2">選擇分店</h2> -->
+  <label class="fz-6 fz-md-4 text-center py-1 d-inline-block mr-2" for="branch">選擇分店</label>
+  <div class="col-4 col-md-8 d-inline-block">
     <div class="drop">
-      <div class="dropOption">
+      <!-- <div class="dropOption">
         <span>台北中山旗艦店</span>
-      </div>
+      </div> -->
+      <select class="dropOption col-9" id="branch">
+        <option value="1">台北中山旗艦店</option>
+        <option value="2">台北綠園店</option>
+        <option value="3">台中清水旗艦店</option>
+        <option value="4">高雄中正形象店</option>
+        <option value="5">高雄夢時代店</option>
+      </select>
     </div>
   </div>
 

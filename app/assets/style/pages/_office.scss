@@ -5,15 +5,8 @@
   }
   h1 {
     border-left: 8px solid #9F1213;
-    @include mobile {
-      font-size: 24px;
-    }
   }
-  @include mobile {
-    h2 {
-      font-size: 16px;
-    }
-  }
+
   .drop {
     position: relative;
     display: block;
@@ -51,5 +44,11 @@
         border: 2px solid #AA0601;
       }
     }
+  }
+  .contactList {
+    height: 200px;
+  }
+  .flexible {
+    flex-grow: 1;
   }
 }

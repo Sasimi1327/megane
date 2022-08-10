@@ -1,4 +1,4 @@
-.container {
+.container-md {
   // 手機版面時調整 .header.container 的 padding ，讓 .navList 滿版
   @include mobile {
     padding-left: 0;
@@ -34,6 +34,5 @@
         outline: 1px solid #fff;
       }
     }
-    
   }
 }
