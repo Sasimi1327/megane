@@ -74,3 +74,32 @@
         @content
     }
 };
+
+
+
+@mixin make-container($gutter: $container-padding-x) {
+  --gutter-x: #{$gutter};
+  --gutter-y: 0;
+  // width: 100%;
+  max-width: $container-pc-max-width;
+  padding-right: calc(var(--gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+  padding-left: calc(var(--gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+  margin: 0 auto;
+}
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $max: map-get($breakpoints, $name);
+  @return if($max and $max > 0, $max - .02, null);
+}
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-max($name, $breakpoints) == null, "", "-#{$name}");
+}
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

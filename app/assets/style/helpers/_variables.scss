@@ -2,6 +2,7 @@
 
 $container-pc-max-width: 1320px;
 $grid-gutter-width: 1.5rem ;
+$container-padding-x: $grid-gutter-width;
 $container-padding-width: (.5 * $grid-gutter-width);
 $grid-columns: 12 !default;
 $enable-grid-classes: true !default;
@@ -30,7 +31,7 @@ $container-max-widths: (
   lg: 960px,
   md: 720px,
   // xl: 1140px,
-  xxl: 1320px
+  // xxl: 1320px
 ) !default;
 
 $direction: (
