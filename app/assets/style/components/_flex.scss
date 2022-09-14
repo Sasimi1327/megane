@@ -1,8 +1,6 @@
 
 
-.d-none {
-  display: none;
-}
+
 .d-flex {
   display: flex;
 }
@@ -15,7 +13,14 @@
 .d-inline-block {
   display: inline-block;
 }
-
+.d-none {
+  display: none;
+}
+.d-md-none {
+  @include mobile {
+    display: none;
+  }
+}
 
 .flex-row {
   flex-direction: row;
