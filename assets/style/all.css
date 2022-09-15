@@ -326,6 +326,9 @@ body {
 .fz-40 {
   font-size: 40px; }
 
+.fz-42 {
+  font-size: 42px; }
+
 .font-regular {
   font-weight: 400; }
 
@@ -466,6 +469,11 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
 .px-12-px {
   padding-left: 12px;
   padding-right: 12px; }
@@ -507,6 +515,10 @@ body {
 
 .mb-124-px {
   margin-bottom: 124px; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
 
 .p-0 {
   padding: 0rem; }
@@ -2599,5 +2611,95 @@ body {
 .social-icon {
   width: 24px;
   height: 24px; }
+
+.opacity-0 {
+  opacity: 0; }
+
+.tabs {
+  border-bottom: 8px solid transparent; }
+  .tabs:checked + label {
+    border-bottom: 8px solid #AA0601; }
+
+.tabcontent {
+  display: none; }
+
+.w-50 {
+  width: 50%; }
+
+.bannerOptical-l {
+  background-image: url("../images/product-header-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30.833%; }
+  @media (max-width: 992px) {
+    .bannerOptical-l {
+      background-image: url("../images/product-header-sm-1.png");
+      padding-top: 72.34%; } }
+
+.bannerOptical-r {
+  background-image: url("../images/product-header-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30.833%; }
+  @media (max-width: 992px) {
+    .bannerOptical-r {
+      background-image: url("../images/product-header-sm-2.png");
+      padding-top: 72.34%; } }
+
+.bannerSunglasses-l {
+  background-image: url("../images/product-header-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30.833%; }
+  @media (max-width: 992px) {
+    .bannerSunglasses-l {
+      background-image: url("../images/product-header-sm-3.png");
+      padding-top: 72.34%; } }
+
+.bannerSunglasses-r {
+  background-image: url("../images/product-header-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30.833%; }
+  @media (max-width: 992px) {
+    .bannerSunglasses-r {
+      background-image: url("../images/product-header-sm-4.png");
+      padding-top: 72.34%; } }
+
+.bannerfunctional-l {
+  background-image: url("../images/home-section4-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 37.037%; }
+  @media (max-width: 992px) {
+    .bannerfunctional-l {
+      background-image: url("../images/home-section4-1-sm.png");
+      padding-top: 68.965%; } }
+
+.bannerfunctional-r {
+  background-image: url("../images/home-section4-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 37.037%; }
+  @media (max-width: 992px) {
+    .bannerfunctional-r {
+      background-image: url("../images/home-section4-2-sm.png");
+      padding-top: 68.965%; } }
+
+.icon-24 {
+  width: 24px;
+  height: 24px; }
+
+.bg-5F3E2D {
+  background-color: #5F3E2D; }
+
+.bg-B75929 {
+  background-color: #B75929; }
 
 /*# sourceMappingURL=all.css.map */
