@@ -48,6 +48,10 @@
 .mb-124-px {
   margin-bottom: 124px;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 //margin、padding設定
 @for $distance from 0 through 12 {
