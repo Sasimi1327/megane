@@ -2615,6 +2615,15 @@ body {
 .opacity-0 {
   opacity: 0; }
 
+.border-left {
+  border-left: 1px solid #DCDCDC; }
+
+.border-right {
+  border-right: 1px solid #DCDCDC; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
 .tabs {
   border-bottom: 8px solid transparent; }
   .tabs:checked + label {
