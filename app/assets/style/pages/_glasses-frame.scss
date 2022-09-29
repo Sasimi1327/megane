@@ -3,6 +3,18 @@
   opacity: 0;
 }
 
+// 「OPTICAL」、「SUNGLASSES」、「FUNCTIONAL」可以加上 border 做分隔
+.border-left {
+  border-left: 1px solid #DCDCDC;
+}
+.border-right {
+  border-right: 1px solid #DCDCDC;
+}
+// 在 label 標籤中加上 cursor: pointer;
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .tabs {
   border-bottom: 8px solid transparent;
   &:checked + label {
